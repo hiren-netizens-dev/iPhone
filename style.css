@@ -116,14 +116,14 @@ section {
   border-bottom: 2px solid #dbdfe2;
 }
 .topBar_wrapper p {
-  font-size: 17px;
+  font-size: 14px;
   color: #858585;
   line-height: 1.3;
   font-family: "SF-Pro-Display-Regular";
 }
 @media screen and (max-width: 1380px) {
   .topBar_wrapper p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -150,50 +150,54 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 991px) {
   .product_wrapper .product_block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 .product_wrapper .product_block .images_wrapper {
   width: 100%;
   max-width: calc(100% - 760px);
   font-size: 0;
-  margin: 103px 0 0;
   padding-right: 50px;
   position: relative;
+  padding-top: 130px;
+}
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_block .images_wrapper {
+    padding-top: 84px;
+  }
 }
 .product_wrapper .product_block .images_wrapper .img-tab {
   display: none;
 }
 .product_wrapper .product_block .images_wrapper .img-tab.active {
   display: block;
+  width: 100%;
+  height: 100%;
+}
+.product_wrapper .product_block .images_wrapper .img-tab.active img {
+  width: 100%;
 }
 @media screen and (max-width: 1380px) {
   .product_wrapper .product_block .images_wrapper {
-    max-width: calc(100% - 580px);
-  }
-  .product_wrapper .product_block .images_wrapper img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .product_wrapper .product_block .images_wrapper {
-    max-width: calc(100% - 500px);
-    margin: 70px 0 0;
+    max-width: calc(100% - 50%);
   }
 }
 @media screen and (max-width: 991px) {
   .product_wrapper .product_block .images_wrapper {
     max-width: 50%;
-    margin: 0 0 30px;
+    margin: 0 auto 30px;
     padding: 0;
   }
 }
@@ -235,7 +239,7 @@ section {
   -webkit-box-shadow: 0px 10px 19.8px 0.2px rgba(127, 127, 127, 0.2);
           box-shadow: 0px 10px 19.8px 0.2px rgba(127, 127, 127, 0.2);
   position: absolute;
-  right: 60px;
+  right: 20px;
   top: 50%;
 }
 .product_wrapper .product_block .images_wrapper .price_block span {
@@ -370,6 +374,11 @@ section {
   border-radius: 15px;
   padding: 46px;
 }
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_block .form_wrapper .form_block {
+    padding: 30px;
+  }
+}
 @media screen and (max-width: 575px) {
   .product_wrapper .product_block .form_wrapper .form_block {
     padding: 25px;
@@ -386,7 +395,15 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 34px 0px 38px;
+}
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_block .form_wrapper .form_block .btn-group {
+    padding: 18px 0px 22px;
+  }
 }
 @media screen and (max-width: 575px) {
   .product_wrapper .product_block .form_wrapper .form_block .btn-group {
@@ -402,7 +419,7 @@ section {
   border-radius: 100%;
   position: relative;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .product_wrapper .product_block .form_wrapper .form_block .btn-group a {
     width: 25px;
     height: 25px;
@@ -440,7 +457,7 @@ section {
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .product_wrapper .product_block .form_wrapper .form_block .btn-group a:after {
     width: 36px;
     height: 36px;
@@ -466,6 +483,11 @@ section {
   color: #1b1b1b;
   line-height: 1.2;
 }
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_block .form_wrapper .form_block .title label {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 1080px) {
   .product_wrapper .product_block .form_wrapper .form_block .title label {
     font-size: 18px;
@@ -474,9 +496,9 @@ section {
 .product_wrapper .product_block .form_wrapper .form_block .form-group {
   margin-bottom: 37px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .product_wrapper .product_block .form_wrapper .form_block .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 }
 .product_wrapper .product_block .form_wrapper .form_block .form-group label {
@@ -506,6 +528,13 @@ section {
 }
 .product_wrapper .product_block .form_wrapper .form_block .form-group input[type=number], .product_wrapper .product_block .form_wrapper .form_block .form-group textarea[type=number], .product_wrapper .product_block .form_wrapper .form_block .form-group select[type=number] {
   -moz-appearance: textfield;
+}
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_block .form_wrapper .form_block .form-group input, .product_wrapper .product_block .form_wrapper .form_block .form-group textarea, .product_wrapper .product_block .form_wrapper .form_block .form-group select {
+    padding: 9px 15px;
+    line-height: 20px;
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 575px) {
   .product_wrapper .product_block .form_wrapper .form_block .form-group input, .product_wrapper .product_block .form_wrapper .form_block .form-group textarea, .product_wrapper .product_block .form_wrapper .form_block .form-group select {
@@ -562,7 +591,7 @@ section {
   display: inline-block;
   cursor: pointer;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .product_wrapper .product_block .form_wrapper .form_block .form-group .form-check label {
     font-size: 15px;
   }
@@ -582,7 +611,7 @@ section {
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1380px) {
   .product_wrapper .product_block .form_wrapper .form_block .btn, .product_wrapper .product_block .form_wrapper .form_block button, .product_wrapper .product_block .form_wrapper .form_block input[type=submit] {
     font-size: 16px;
     height: 40px;
@@ -1231,13 +1260,26 @@ footer {
   }
 }
 footer p {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "SF-Pro-Display-Regular";
   line-height: 25px;
   color: #000;
 }
 @media screen and (max-width: 1380px) {
   footer p {
+    font-size: 14px;
+  }
+}
+footer h4 {
+  font-size: 20px;
+  font-family: "SF-Pro-Display-Bold";
+  line-height: 25px;
+  color: #000;
+  text-align: center;
+  margin-top: 5px;
+}
+@media screen and (max-width: 1380px) {
+  footer h4 {
     font-size: 14px;
   }
 }
