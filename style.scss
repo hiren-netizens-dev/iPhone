@@ -111,19 +111,49 @@ section{
 /* BOOTSTRAP CSS END'S HERE */
 
 /* TOPBAR CSS START HERE */
-.topBar_wrapper{
-    padding:0px 10px;
-    text-align: center;
-    border-bottom:2px solid $border;
+.topbar{
+    left: 0;
+    margin: auto;
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.99);
+    border-bottom: 1px solid #e4e4e4;
     p{
-        font-size:14px;
-        color:#858585;
-        line-height: 1.3;
+        color: #999;
+        font-size: 11px;
+        vertical-align: baseline;
+        margin-bottom: 0;
+        line-height: 1em;
+        margin-left: 0;
+        padding: 5px 0;
+        text-align: center;    
         font-family: $SFP-Regular;
-        @media screen and (max-width:1380px){
-            font-size: 12px;
+        @media screen and (max-width:991px){
+            font-size: 11px;
         }
     }
+    &.topbar2 {
+        background-color: #f2f2f2;
+        border-bottom: none;
+        padding: 10px 0;
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            line-height: 22px;
+            color: #666;
+            font-weight: 400;
+        }
+        #up-comming-time-2 {
+            padding: 0px;
+            background: transparent;
+            position: relative;
+            text-align: center;
+            color: #333;
+            font-family: $SFP-Regular;
+            font-size: calc(1.1em + 0.15vw);
+        }
+    }    
 }
 /* TOPBAR CSS END'S HERE */
 
@@ -314,10 +344,10 @@ section{
                     padding: 25px; 
                 }
                 $colors: (
-                    black: linear-gradient( 90deg, rgb(5,6,10) 0%, rgb(141,141,141) 100%),
-                    golden: linear-gradient( 2deg, rgb(241,208,164) 0%, rgb(248,228,201) 100%),
-                    blue: linear-gradient( 90deg, rgb(115,138,165) 0%, rgb(142,161,184) 100%),
-                    green: linear-gradient( 28deg, rgb(190,193,170) 0%, rgb(241,242,235) 100%),                      
+                    black: #383733,
+                    golden: #f3e2c1,
+                    blue: #98afc9,
+                    green: #9cdfcf,                      
                 );                
                 input[type="radio"] {
                     display: none;
@@ -327,7 +357,7 @@ section{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    padding: 34px 0px 38px;
+                    padding: 15px 0px 38px;
                     @media screen and (max-width:1380px) {
                         padding: 18px 0px 22px;
                     }
@@ -338,10 +368,11 @@ section{
                         display: block;
                         width: 40px;
                         height: 40px;
-                        margin-right: 30px;
+                        margin-right: 20px;
                         cursor: pointer;
                         border-radius: 100%;
                         position: relative;
+                        box-shadow: inset 0px 1px 2px 0px rgb(0 0 0 / 40%);
                         @media screen and (max-width:1380px) {
                             width: 25px;
                             height: 25px;
@@ -355,15 +386,14 @@ section{
                         &:after {
                             content: "";
                             display: block;
-                            width: 56px;
-                            height: 56px;
-                            border: 2px solid #000;
+                            width: 48px;
+                            height: 48px;
+                            border: 1px solid #000;
                             border-radius: 100%;
                             left: 50%;
                             top: 50%;
                             transform: translate(-50%,-50%) scale(0);
                             position: absolute;
-                            transition: transform 0.5s ease;
                             @media screen and (max-width:1380px) {
                                 width: 36px;
                                 height: 36px;
@@ -375,7 +405,6 @@ section{
                         &.active{
                             &:after {
                                 transform: translate(-50%,-50%) scale(1);
-                                transition: transform 0.5s ease;
                             }
                         }
                     }
@@ -392,6 +421,15 @@ section{
                         }
                         @media screen and (max-width:1080px) {
                             font-size: 18px;
+                        }
+                    }
+                    &.choose_color{
+                        margin-top: 20px;
+                        label{
+                            font-size: 18px;
+                            @media screen and (max-width:1380px) {
+                                font-size: 16px;
+                            }
                         }
                     }
                 }
@@ -440,6 +478,19 @@ section{
                     }
                     ::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::placeholder {
                         font-family:$SFP-Regular;color: #888888;
+                    }
+                    select{
+                        background-image:url(images/dropdown.png);
+                        background-repeat: no-repeat;
+                        background-position: right 20px center;
+                        color: #888888;          
+                        cursor: pointer;              
+                        &:focus{
+                            border: 1px solid #c2c2c2;                    
+                        }
+                        &.active{
+                            color: #05060a;
+                        }
                     }
                     .form-check{
                         display: flex;
