@@ -147,7 +147,8 @@ section{
             color: #666;
             font-weight: 400;
         }
-        #up-comming-time-2 {
+        .count {
+           div{
             padding: 0px;
             background: transparent;
             position: relative;
@@ -155,6 +156,9 @@ section{
             color: #333;
             font-family: $SFP-Regular;
             font-size: calc(1.1em + 0.15vw);
+            min-width: 54px;
+            min-height: 25px;
+           }
         }
     }    
 }
