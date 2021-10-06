@@ -647,6 +647,7 @@ section{
 .feature_wrapper{
     padding:100px 0 0;
     margin: 60px 0 120px;
+    overflow: hidden;
     @media screen and (max-width:1080px) {
         margin: 0;
         padding: 60px 0;
