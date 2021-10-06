@@ -191,8 +191,6 @@ section{
                 width: 170px;
                 height: 170px;
                 border-radius: 100%;
-                outline: 2px solid #000;
-                outline-offset: -10px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -209,19 +207,30 @@ section{
                     font-size: 32px;
                     font-family: $SFP-Bold;
                 }
+                &:after{
+                    width: calc(100% - 15px);
+                    height: calc(100% - 15px);
+                    content: "";
+                    position: absolute;
+                    border: 2px solid $black;
+                    border-radius: 100%;
+                }
                 @media screen and (max-width:1480px) {
                     right: 30px;
                 }
                 @media screen and (max-width:1380px) {
                     width: 120px;
                     height: 120px;
-                    outline-offset: -5px;
                     right: 20px;
                     span{
                         font-size: 18px;
                     }
                     h2{
                         font-size: 22px;
+                    }
+                    &:after{
+                        width: calc(100% - 8px);
+                        height: calc(100% - 8px);
                     }
                 }
                 @media screen and (max-width:991px) {
