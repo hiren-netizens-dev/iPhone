@@ -485,13 +485,13 @@ section {
   background: #383733;
 }
 .product_wrapper .product_block .form_wrapper .form_block .btn-group a.golden {
-  background: #f3e2c1;
+  background: #ffeed7;
 }
 .product_wrapper .product_block .form_wrapper .form_block .btn-group a.blue {
-  background: #98afc9;
+  background: #bcdaf6;
 }
 .product_wrapper .product_block .form_wrapper .form_block .btn-group a.green {
-  background: #9cdfcf;
+  background: #f1f2ed;
 }
 .product_wrapper .product_block .form_wrapper .form_block .btn-group a:after {
   content: "";
