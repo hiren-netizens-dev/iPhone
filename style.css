@@ -371,55 +371,6 @@ section {
   width: 100%;
   max-width: 760px;
 }
-.product_wrapper .product_block .form_wrapper .product_title {
-  text-align: center;
-  margin-bottom: 14px;
-}
-@media screen and (max-width: 991px) {
-  .product_wrapper .product_block .form_wrapper .product_title {
-    margin-bottom: 30px;
-  }
-}
-.product_wrapper .product_block .form_wrapper .product_title label {
-  font-size: 28px;
-  color: #000;
-  line-height: 1.2;
-  display: block;
-  margin-bottom: 10px;
-}
-@media screen and (max-width: 1380px) {
-  .product_wrapper .product_block .form_wrapper .product_title label {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .product_wrapper .product_block .form_wrapper .product_title label {
-    font-size: 18px;
-  }
-}
-.product_wrapper .product_block .form_wrapper .product_title h1 {
-  font-size: 39px;
-  font-family: "SF-Pro-Display-Bold";
-  color: #000;
-  font-weight: bold;
-  line-height: 1.2;
-}
-@media screen and (max-width: 1380PX) {
-  .product_wrapper .product_block .form_wrapper .product_title h1 {
-    font-size: 34px;
-  }
-}
-@media screen and (max-width: 1080px) {
-  .product_wrapper .product_block .form_wrapper .product_title h1 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .product_wrapper .product_block .form_wrapper .product_title h1 {
-    font-size: 32px;
-  }
-}
 .product_wrapper .product_block .form_wrapper .form_block {
   width: 100%;
   margin: 0 auto;
@@ -692,7 +643,55 @@ section {
   -webkit-transition: background 0.5s ease;
   transition: background 0.5s ease;
 }
-
+.product_wrapper .product_title {
+  text-align: center;
+  margin-bottom: 14px;
+}
+@media screen and (max-width: 991px) {
+  .product_wrapper .product_title {
+    margin-bottom: 30px;
+  }
+}
+.product_wrapper .product_title label {
+  font-size: 28px;
+  color: #000;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1380px) {
+  .product_wrapper .product_title label {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .product_wrapper .product_title label {
+    font-size: 18px;
+  }
+}
+.product_wrapper .product_title h1 {
+  font-size: 39px;
+  font-family: "SF-Pro-Display-Bold";
+  color: #000;
+  font-weight: bold;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1380PX) {
+  .product_wrapper .product_title h1 {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .product_wrapper .product_title h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product_wrapper .product_title h1 {
+    font-size: 32px;
+  }
+}
 /* PRODUCT BLOCK CSS END'S HERE */
 /* iPHONE SHOWCASE BLOCK CSS START HERE */
 .showcase_wrapper {

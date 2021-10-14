@@ -302,43 +302,6 @@ section{
         .form_wrapper{
             width: 100%;
             max-width: 760px;
-            .product_title{
-                text-align: center;
-                margin-bottom: 14px;
-                @media screen and (max-width:991px) {
-                    margin-bottom: 30px;
-                }
-                label{
-                    font-size: 28px;
-                    color: $black;
-                    line-height: 1.2;   
-                    display: block;         
-                    margin-bottom: 10px;
-                    @media screen and (max-width:1380px){
-                        font-size: 24px;
-                        margin-bottom: 5px;
-                    }
-                    @media screen and (max-width:1080px) {
-                        font-size: 18px;
-                    } 
-                }
-                h1{
-                    font-size: 39px;
-                    font-family: $SFP-Bold;
-                    color: $black;
-                    font-weight: bold;
-                    line-height: 1.2;    
-                    @media screen and (max-width:1380PX){
-                        font-size: 34px;
-                    }      
-                    @media screen and (max-width:1080px) {
-                        font-size: 26px;
-                    }
-                    @media screen and (max-width:991px) {
-                        font-size: 32px;
-                    }      
-                }
-            }
             .form_block{
                 width: 100%;
                 margin: 0 auto;
@@ -566,6 +529,46 @@ section{
                 }
             }
         }
+    }
+    .product_title{
+        text-align: center;
+        margin-bottom: 14px;
+        @media screen and (max-width:991px) {
+            margin-bottom: 30px;
+        }
+        label{
+            font-size: 28px;
+            color: $black;
+            line-height: 1.2;   
+            display: block;         
+            margin-bottom: 10px;
+            @media screen and (max-width:1380px){
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            @media screen and (max-width:1080px) {
+                font-size: 18px;
+            } 
+        }
+        h1{
+            font-size: 39px;
+            font-family: $SFP-Bold;
+            color: $black;
+            font-weight: bold;
+            line-height: 1.2;    
+            @media screen and (max-width:1380PX){
+                font-size: 34px;
+            }      
+            @media screen and (max-width:1080px) {
+                font-size: 26px;
+            }
+            @media screen and (max-width:991px) {
+                font-size: 32px;
+            }      
+        }
+    }
+    &.campaign_two{
+
     }
 }
 /* PRODUCT BLOCK CSS END'S HERE */
