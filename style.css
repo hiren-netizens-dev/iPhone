@@ -692,6 +692,36 @@ section {
     font-size: 32px;
   }
 }
+@media screen and (max-width: 991px) {
+  .product_wrapper.campaign_two .product_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 991px) {
+  .product_wrapper.campaign_two .product_block .images_wrapper {
+    margin-top: 30px;
+  }
+}
+.product_wrapper.campaign_two .product_block .images_wrapper .product_title {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .product_wrapper.campaign_two .product_block .images_wrapper .product_title {
+    display: block;
+  }
+}
+.product_wrapper.campaign_two .product_block .form_wrapper .product_title {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .product_wrapper.campaign_two .product_block .form_wrapper .product_title {
+    display: none;
+  }
+}
+
 /* PRODUCT BLOCK CSS END'S HERE */
 /* iPHONE SHOWCASE BLOCK CSS START HERE */
 .showcase_wrapper {
